@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+:root {
+  font-size: 16px;
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  font-family: "Karla";
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Gray);
+}
+
+.card {
+  width: 650px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.top-card {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.top-container {
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top-container .top-card-tittle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--Cyan);
+}
+.top-container .top-card-dec-one {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--Bright-Yellow);
+}
+.top-container .top-card-dec-two {
+  color: var(--Grayish-Blue);
+}
+
+.body-card {
+  display: flex;
+}
+
+.left-card {
+  width: 50%;
+  height: 300px;
+  background-color: var(--Cyan);
+  padding: 35px;
+}
+
+.left-container {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-container .tittle-left-card {
+  color: var(--Light-Gray);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.left-container .price-left-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--Light-Gray);
+  font-size: 2rem;
+  font-weight: 600;
+  width: 65%;
+}
+
+.left-container .price-left-card .date {
+  color: var(--Light-Gray);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.left-container .dec-left-card {
+  color: var(--Light-Gray);
+}
+
+.left-container .btn {
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  color: var(--Light-Gray);
+  background-color: var(--Bright-Yellow);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.right-card {
+  width: 50%;
+  height: 300px;
+  background-color: var(--Cyan);
+  opacity: 0.8;
+  padding: 40px;
+}
+
+.right-container {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right-container .tittle-right-card {
+  color: var(--Light-Gray);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.right-container .dec-right-card {
+  max-width: 95%;
+  color: var(--Light-Gray);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: normal;
+}

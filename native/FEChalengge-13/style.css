@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content .content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font);
+  gap: 0.4rem;
+  margin-bottom: 20px;
+}
+
+.content-header h1:nth-child(1) {
+  font-weight: normal;
+  color: var(--Very-Dark-Blue);
+}
+
+.content-header p {
+  text-align: center;
+  max-width: 50%;
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+}
+
+.content-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  position: relative;
+  width: 320px;
+  max-width: 300px;
+  height: 250px;
+  padding: 18px;
+  font-family: var(--font);
+  box-shadow: 0px 8px 24px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box p {
+  font-size: 0.8rem;
+  color: var(--Grayish-Blue);
+  margin-top: 10px;
+}
+
+.box-one::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--Cyan);
+  top: 0;
+  left: 0;
+}
+.box-one::after {
+  content: url("images/icon-supervisor.svg");
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.box-two::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--Red);
+  top: 0;
+  left: 0;
+}
+
+.box-two::after {
+  content: url("images/icon-team-builder.svg");
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.box-three::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--Orange);
+  top: 0;
+  left: 0;
+}
+
+.box-three::after {
+  content: url("images/icon-karma.svg");
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.box-four::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--Blue);
+  top: 0;
+  left: 0;
+}
+
+.box-four::after {
+  content: url("images/icon-calculator.svg");
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 420px) {
+  .content-header h1:nth-child(1) {
+    font-weight: normal;
+    color: var(--Very-Dark-Blue);
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .content-header h1:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .content-header p {
+    text-align: center;
+    max-width: 90%;
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem;
+  }
+}

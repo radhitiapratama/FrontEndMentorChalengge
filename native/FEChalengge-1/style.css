@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+:root {
+  --primary: hsl(0, 36%, 70%);
+  --secondary: hsl(0, 93%, 68%);
+  --dark: hsl(0, 6%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px 24px rgb(0, 0, 0, 0.2);
+  background: url("images/bg-pattern-desktop.svg");
+  background-position: center;
+}
+
+section .content {
+  width: 500px;
+  height: 100%;
+  padding: 70px;
+}
+
+section .hero {
+  width: 500px;
+  height: 100%;
+  background-color: red;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content .logo {
+  margin-bottom: 60px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 100;
+  color: var(--primary);
+}
+
+.title h2 {
+  font-size: 4.5rem;
+  color: var(--dark);
+}
+
+.text-wrapper {
+  margin-bottom: 20px;
+}
+
+.text-wrapper p {
+  font-size: 14px;
+  color: var(--primary);
+  line-height: 20px;
+}
+
+input {
+  width: 80%;
+  border-radius: 30px;
+  padding: 15px;
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+@media (max-width: 580px) {
+  section {
+    flex-wrap: wrap-reverse;
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    height: 350px;
+    top: 40%;
+  }
+
+  section .content {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  section .hero {
+    background: url("images/hero-mobile.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+  }
+
+  section .hero img {
+    display: none;
+  }
+
+  .logo {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: -40px;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-wrapper p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  input {
+    margin: auto;
+  }
+}
